@@ -1,0 +1,37 @@
+import js from '@eslint/js';
+import globals from 'globals';
+
+export default [
+  {
+    ignores: ['node_modules/**', 'coverage/**', 'dist/**', 'build/**'],
+  },
+  js.configs.recommended,
+  {
+    files: ['**/*.js'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: {
+        ...globals.node,
+        ...globals.browser,
+      },
+    },
+    rules: {
+      // 学習用コードでは実行結果を観察するため、console出力を許可する。
+      'no-console': 'off',
+
+      // 比較用の変数や途中確認用の値を置くことがあるため、未使用は警告に留める。
+      'no-unused-vars': [
+        'warn',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
+        },
+      ],
+
+      // 注意例を扱う場面を考慮し、定数条件はエラーではなく警告にする。
+      'no-constant-condition': ['warn', { checkLoops: false }],
+    },
+  },
+];

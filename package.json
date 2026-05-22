@@ -1,0 +1,32 @@
+{
+  "name": "javascript-practical-foundations-study",
+  "version": "0.1.0",
+  "private": true,
+  "description": "JavaScriptの実践的な基礎をコードリーディング中心で学ぶための学習リポジトリ。",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "unit:01": "node src/01-runtime-module-basics/index.js",
+    "unit:02": "node src/02-values-types-comparison/index.js",
+    "unit:03": "node src/03-variables-scope-reference/index.js",
+    "unit:04": "node src/04-functions-callbacks-closure/index.js",
+    "unit:05": "node src/05-objects-destructuring-immutability/index.js",
+    "unit:06": "node src/06-arrays-data-transform/index.js",
+    "unit:07": "node src/07-builtins-string-regexp-date/index.js",
+    "unit:08": "node src/08-error-handling-validation/index.js",
+    "unit:09": "node src/09-async-promise-fetch/index.js",
+    "unit:10": "node src/10-class-prototype-this-iterable/index.js",
+    "unit:12": "node src/12-node-json-practical-patterns/index.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3"
+  }
+}
