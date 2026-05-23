@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit 01 Browser Module Demo</title>
+  </head>
+  <body>
+    <main>
+      <h1>Unit 01 Browser Module Demo</h1>
+      <p>このHTMLは、ブラウザで <code>&lt;script type="module"&gt;</code> を使う最小例。</p>
+
+      <section>
+        <h2>実行結果</h2>
+        <p data-result>読み込み中...</p>
+      </section>
+    </main>
+
+    <!--
+      type="module" を指定すると、ブラウザでも ES Modules として JavaScript を読み込める。
+      このファイルは、ブラウザ環境で document や window を使えることを確認するためのサンプル。
+      ブラウザのセキュリティ設定によって file:// での module 読み込みが制限される場合は、
+      VS Code Live Server などのローカルサーバー経由で確認する。
+    -->
+    <script type="module" src="./browser-module-main.js"></script>
+  </body>
+</html>
