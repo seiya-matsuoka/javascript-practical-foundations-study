@@ -34,4 +34,14 @@ export default [
       'no-constant-condition': ['warn', { checkLoops: false }],
     },
   },
+  {
+    files: ['src/02-values-types-comparison/**/*.js'],
+    rules: {
+      eqeqeq: 'off',
+      'use-isnan': 'off',
+      'no-compare-neg-zero': 'off',
+      'no-constant-binary-expression': 'off',
+      'no-unassigned-vars': 'off',
+    },
+  },
 ];
