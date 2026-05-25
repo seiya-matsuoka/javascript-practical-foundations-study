@@ -44,4 +44,11 @@ export default [
       'no-unassigned-vars': 'off',
     },
   },
+  {
+    files: ['src/03-variables-scope-reference/**/*.js'],
+    rules: {
+      'no-useless-assignment': 'off',
+      'no-constant-condition': 'off',
+    },
+  },
 ];
