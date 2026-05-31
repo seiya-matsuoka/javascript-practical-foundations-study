@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit 11. ブラウザ JavaScript・DOM・イベント・フォーム・ストレージ</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <p class="eyebrow">javascript-practical-foundations-study</p>
+      <h1>Unit 11. ブラウザ JavaScript・DOM・イベント・フォーム・ストレージ</h1>
+      <p class="lead">
+        React に進む前提として、ブラウザ環境の DOM、イベント、フォーム、ストレージ、URL、fetch
+        の基本を確認する。
+      </p>
+    </header>
+
+    <main class="app-layout">
+      <section class="card" data-section="dom-query">
+        <div class="card-header">
+          <h2>DOM の取得と表示更新</h2>
+          <p>
+            querySelector / querySelectorAll / textContent / classList / dataset / style
+            を確認する。
+          </p>
+        </div>
+
+        <div class="status-panel" data-status-panel data-state="idle">
+          <span class="status-label">現在の状態</span>
+          <strong data-status-text>idle</strong>
+        </div>
+
+        <div class="button-row" data-filter-buttons>
+          <button type="button" class="button" data-filter="all">すべて</button>
+          <button type="button" class="button" data-filter="active">未完了</button>
+          <button type="button" class="button" data-filter="completed">完了</button>
+        </div>
+
+        <p class="summary" data-task-summary>タスク一覧の状態を読み込み中。</p>
+      </section>
+
+      <section class="card" data-section="form">
+        <div class="card-header">
+          <h2>フォームと submit</h2>
+          <p>input / submit / preventDefault / FormData / validation を確認する。</p>
+        </div>
+
+        <form class="task-form" data-task-form>
+          <label>
+            タスク名
+            <input
+              type="text"
+              name="title"
+              data-task-title-input
+              placeholder="例: DOM の基本を確認する"
+              autocomplete="off"
+            />
+          </label>
+
+          <label>
+            種別
+            <select name="category" data-task-category-select>
+              <option value="study">study</option>
+              <option value="work">work</option>
+              <option value="private">private</option>
+            </select>
+          </label>
+
+          <button type="submit" class="button primary">追加する</button>
+        </form>
+
+        <p class="message" data-form-message role="status"></p>
+      </section>
+
+      <section class="card" data-section="task-list">
+        <div class="card-header">
+          <h2>要素作成・削除・イベント委譲</h2>
+          <p>createElement / append / remove / event bubbling / event delegation を確認する。</p>
+        </div>
+
+        <ul class="task-list" data-task-list></ul>
+      </section>
+
+      <section class="card" data-section="storage">
+        <div class="card-header">
+          <h2>localStorage / sessionStorage</h2>
+          <p>ブラウザに保存される値と、タブ単位で保持される値を確認する。</p>
+        </div>
+
+        <div class="storage-grid">
+          <div>
+            <span class="small-label">localStorage</span>
+            <strong data-local-storage-count>0</strong>
+          </div>
+          <div>
+            <span class="small-label">sessionStorage</span>
+            <strong data-session-storage-count>0</strong>
+          </div>
+        </div>
+
+        <div class="button-row">
+          <button type="button" class="button" data-increment-local-storage>
+            localStorage を増やす
+          </button>
+          <button type="button" class="button" data-increment-session-storage>
+            sessionStorage を増やす
+          </button>
+          <button type="button" class="button danger" data-clear-storage>保存値をクリアする</button>
+        </div>
+      </section>
+
+      <section class="card" data-section="url">
+        <div class="card-header">
+          <h2>URL / URLSearchParams</h2>
+          <p>現在の URL を元に query parameter を組み立てる。</p>
+        </div>
+
+        <div class="code-box" data-url-output></div>
+      </section>
+
+      <section class="card" data-section="fetch">
+        <div class="card-header">
+          <h2>ブラウザでの fetch</h2>
+          <p>fetch / Response / JSON 取得 / エラー処理の入口を確認する。</p>
+        </div>
+
+        <button type="button" class="button primary" data-fetch-button>
+          サンプル JSON を取得する
+        </button>
+        <pre class="fetch-result" data-fetch-result>まだ取得していない。</pre>
+      </section>
+    </main>
+  </body>
+</html>
