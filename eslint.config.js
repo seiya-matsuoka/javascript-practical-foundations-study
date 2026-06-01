@@ -51,4 +51,12 @@ export default [
       'no-constant-condition': 'off',
     },
   },
+  {
+    files: ['src/12-node-json-practical-patterns/**/*.js'],
+    rules: {
+      'no-redeclare': 'off',
+      'no-constant-condition': 'off',
+      'no-constant-binary-expression': 'off',
+    },
+  },
 ];
