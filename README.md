@@ -15,7 +15,7 @@ JavaScript の基礎を、コードリーディング中心で体系的に学習
 
 ## このリポジトリの位置づけ
 
-このリポジトリは、TypeScript / React の学習に進む前に、JavaScript の基礎、JavaScript らしい書き方、実務で頻出する標準機能を整理するための `javascript-practical-foundations-study` である。
+このリポジトリは、TypeScript / React に進む前に、JavaScript の基礎、JavaScript らしい書き方、実務で頻出する標準機能を整理するための `javascript-practical-foundations-study` である。
 
 JavaScript は、ブラウザ側でも Node.js 側でも使われる。  
 そのため、このリポジトリでは、言語仕様の基本だけでなく、実務でコードを読むときに頻出する次の要素もまとめて扱う。
