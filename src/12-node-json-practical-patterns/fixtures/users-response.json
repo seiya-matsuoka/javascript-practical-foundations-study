@@ -1,0 +1,26 @@
+{
+  "status": "success",
+  "meta": {
+    "requestId": "req-users-001",
+    "total": 3
+  },
+  "data": [
+    {
+      "id": 10,
+      "name": "Alice",
+      "profile": {
+        "department": "development",
+        "location": "Tokyo"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Bob",
+      "profile": null
+    },
+    {
+      "id": 12,
+      "name": "Carol"
+    }
+  ]
+}

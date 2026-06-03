@@ -1,0 +1,13 @@
+{
+  "appName": "JavaScript Practical Foundations",
+  "defaultLocale": "ja-JP",
+  "features": {
+    "fileOutput": true,
+    "apiPreview": true,
+    "experimentalUi": false
+  },
+  "pagination": {
+    "defaultPage": 1,
+    "defaultPerPage": 20
+  }
+}
